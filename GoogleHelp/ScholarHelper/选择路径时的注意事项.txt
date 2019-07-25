@@ -1,0 +1,15 @@
+使用开发者模式，选择插件路径，这一步，很容易出错！
+
+安装任何插件时，注意，是任何插件！
+选择的插件路径，
+一定要 直接 包含manifest.json！
+一定要 直接 包含manifest.json！
+一定要 直接 包含manifest.json！
+重要话说三遍。
+
+举例来说，GoogleHelp解压之后，或者破解之后，
+manifest.json的绝对路径是：C:\test\GoogleHelp\manifest.json,
+那么，我们在chrome中，选择的正确路径是C:\test\GoogleHelp
+而C:\test，或者C:\，这两个路径全是错误的！
+
+

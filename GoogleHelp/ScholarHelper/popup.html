@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="popup.js"></script>
+    <title>谷歌学术助手</title>
+    <style>
+        #SearchInput 
+        {
+            float:left;
+            padding-left:10px;
+            width:300px;
+            height:42px;
+            font-size:18px;
+            font-weight:100;
+            outline: none;
+        }
+        
+        #SearchButton
+        {
+            float:left;
+            width:120px;
+            height:42px;
+            color:#FFFFFF;
+            font-size:18px;
+            font-weight:100;
+            border:none;
+            outline:none;
+            background-color:#287BCC;
+        }
+        
+        #SearchButton:visited,#SearchButton:hover,#SearchButton:active
+        {
+            background-color:#287BFF;
+        }
+        
+        .linkItem 
+        {
+            width:100px;
+            height:38px;
+            color:#2f4460;
+            font-size: 14px;
+            font-weight: 700;
+            background: #FFFFFF;
+            outline:none;
+            border:1px solid #DFDFDF;
+        }
+        
+        .linkItem:visited,.linkItem:hover,.linkItem:active
+        {
+            border-color:#287BCC;
+            color: #287BCC;
+        }
+        
+        .suggestItem,.suggestItem_keyselect
+        {
+            padding-left:10px;
+            
+            width:300px;
+            height:26px;
+
+            color:#2f4460;
+            font-size:18px;
+            font-weight:100;
+            background:#FFFFFF;
+            
+            float:left;
+            white-space:nowrap; 
+            overflow:hidden;
+            text-overflow:ellipsis;
+        }
+        
+        .suggestItem:hover,.suggestItem_keyselect
+        {
+            color:#FFFFFF;
+            background-color:#287BCC;
+        }
+    </style>
+</head>
+<body style="width:420px;height:330px;overflow-y:auto">
+   
+    <div id="particles-bk"></div>
+    
+    <div style="margin:0px auto;height:52px;text-align:center;">
+        <h1 style="font-size:20px;font-weight:500;color:#287BCC;" align="center">Google学术助手</h1>
+        <input type="search" id="SearchInput" placeholder="Google学术" maxlength="255" autocomplete="off" autofocus="autofocus">
+        <button type="button" id="SearchButton" >Google学术</button>
+    </div>
+    
+    <div id="suggestList" style="position:absolute;margin-top:32px;width:300px;background-color:#FFFFFF;border:1px solid #CCCCCC;display:none;">
+    </div>
+    
+    <div style="margin-top:80px;height:40px;">
+        <button type="button" title="Google" class="linkItem" id="google">Google</button>
+        <button type="button" title="OA图书馆" class="linkItem" id="OALib">OALib</button>
+        <button type="button" title="Sci-Hub" class="linkItem" id="SCI">SCI</button>
+        <button type="button" title="ISI Web of Science" class="linkItem" id="ISI">ISI</button>
+    </div>
+    
+    <div style="margin-top:20px;height:40px;">
+        <button type="button" title="Library Genesis" class="linkItem" id="LibGen">LibGen</button>
+        <button type="button" title="BookSC电子书" class="linkItem" id="BookSC">电子书</button>
+        <button type="button" title="海盗湾" class="linkItem" id="PirateBay">海盗湾</button>
+        <button type="button" title="维普网" class="linkItem" id="cqvip">维普</button>
+    </div>
+    
+    <div style="margin-top:20px;height:40px;">
+        <button type="button" title="中国知网" class="linkItem" id="cnki">知网</button>
+        <button type="button" title="万方数据" class="linkItem" id="wanfangdata">万方</button>
+        <button type="button" title="百度学术" class="linkItem" id="baiduxueshu">百度学术</button>
+        <button type="button" title="学术网站导航" class="linkItem" id="allwebsite">学术网站大全</button>
+    </div>
+    
+    <div>
+        <section class="model-1">
+            <div class="checkbox">
+                <input type="checkbox" id="enableProxy"/>
+                <label></label>
+            </div>
+        </section>
+        <label style="float:left;margin-top:12px;color:#2f4460;font-size:14px;font-weight:500;">打开Google代理</label>
+       <a href="https://scholar.google.com/scholar_settings" target="_blank" title="Google学术设置" style="width:32px;height:32px;float:right;margin-top:8px;"><img src="/images/setting.png"/></a>
+    <div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+{
+    "GoogleScholarAssistant": {
+      "message": "GoogleScholarAssistant"
+    },
+   "ProxyCoverMessage": {
+      "message": "This program proxy has been overwritten and unable to provide Google services"
+   },
+   "CantOpenGoogleForConflictExt": {
+      "message": "a conflict extension that may not be able to access Google"
+   },
+   "GoogleProxyIsOpen": {
+      "message": "Google proxy has been opened"
+   },
+   "GoogleProxyIsClose": {
+      "message": "Google proxy has been closed"
+   },
+   "GoogleProxyIsSetting": {
+      "message": "Google proxy is being set up..."
+   },
+   "WaitMoment": {
+      "message": "Google Proxy is being set up. Please wait a moment..."
+   },
+   "TryLater": {
+      "message": "Google proxy settings failed, please try later"
+   },
+   "DisableExtension": {
+      "message": "Disable related programs"
+   },
+   "SwitchPopup": {
+      "message": "Alt + G can be used to switch Google Scholar Assistant"
+   },
+   "NoRemind": {
+      "message": "No more reminding"
+   },
+   "HomepageWarning": {
+      "message": "To ensure that this plug-in is free to use, while maintaining server costs, chrome startup will open the designated web site, thanks for support"
+   },
+    "freePaperMsg": {
+      "message": "See the middle right side of the page, the lock button? Click on it to open the link to the free paper, the free paper by Google Scholar Assistant"
+    },
+    "nofreepaperMsg": {
+      "message": "Sorry, no free papers found for this link"
+    },
+    "freepaperTitle": {
+      "message": "Click on this button to find a free paper for you"
+    },
+    "nofreepaperTitle": {
+      "message": "Sorry, the download button is unavailable and no free papers are found for the link"
+    },
+    "hasNewUpdate": {
+      "message": "New version available, you need to upgrade..."
+    },
+    "OK": {
+      "message": "OK"
+    }
+}

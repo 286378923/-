@@ -1,0 +1,53 @@
+{
+    "GoogleScholarAssistant": {
+      "message": "谷歌学术助手"
+   },
+   "ProxyCoverMessage": {
+      "message": "本程序代理已被覆盖,无法提供Google服务"
+   },
+   "GoogleProxyIsOpen": {
+      "message": "谷歌代理已打开"
+   },
+   "GoogleProxyIsClose": {
+      "message": "谷歌代理已关闭"
+   },
+   "GoogleProxyIsSetting": {
+      "message": "谷歌代理正在设置..."
+   },
+   "WaitMoment": {
+      "message": "谷歌代理正在设置,请稍候..."
+   },
+   "TryLater": {
+      "message": "谷歌代理设置失败,请稍候重试..."
+   },
+   "DisableExtension": {
+      "message": "禁用相关程序"
+   },
+   "SwitchPopup": {
+      "message": "可使用 Alt + G 切换谷歌学术助手"
+   },
+   "NoRemind": {
+      "message": "不再提醒"
+   },
+   "HomepageWarning": {
+      "message": "为保证本插件免费使用，同时维持服务器开销，浏览器启动后会打开指定网站，感谢支持"
+	},
+    "freePaperMsg": {
+      "message": "看到页面右侧中部，锁状按钮吗？点击它，就会打开该链接对应的免费论文，该免费论文由谷歌学术助手寻找"
+    },
+    "nofreepaperMsg": {
+      "message": "抱歉，没有找到该链接对应的免费论文"
+    },
+    "freepaperTitle": {
+      "message": "点击该按钮，为您寻找的免费论文"
+    },
+    "nofreepaperTitle": {
+      "message": "抱歉，下载按钮不可用，没有找到该链接对应的免费论文"
+    },
+    "hasNewUpdate": {
+      "message": "有新版本可使用，您需要升级..."
+    },
+    "OK": {
+      "message": "确定"
+    }
+}

@@ -1,0 +1,54 @@
+﻿{
+    "manifest_version": 2,
+    "name": "谷歌学术助手",
+    "short_name": "谷歌学术助手(Google Scholar Help)",
+    "version": "1.8",
+    "description": "谷歌学术助手(Google Scholar Help) 为中国人定制的Google学术助手",
+    "minimum_chrome_version": "36",
+    "offline_enabled": true,
+    "update_url": "https://clients2.google.com/service/update2/crx",
+    
+    "icons": {
+        "16": "images/icon16.png",
+        "19": "images/icon19.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    },
+    "commands": {
+        "_execute_browser_action": {
+          "suggested_key": {"default": "Alt+G" },
+          "description": "show or hide popup page"
+        }
+    },
+    "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+    "content_scripts":[{
+      "all_frames": true,
+      "include_globs":["http?://www.google.*/", "http?://www.google.*/#hl=*", "http?://www.google.*/search*", "http?://www.google.*/webhp?hl=*", "https://encrypted.google.*/", "https://encrypted.google.*/#hl=*", "https://encrypted.gogole.*/search*", "https://encrypted.google.*/webhp?hl=*", "http?://ipv6.google.com/", "http?://ipv6.google.com/search*"],
+      "js":["redirect.js" ],
+      "matches":[ "http://*/*", "https://*/*" ],
+      "run_at":"document_end"
+    },
+	{
+      "js": ["jquery.js","content.js" ],
+      "matches": ["http://*/*", "https://*/*"]
+	}],
+    "default_locale": "zh_CN",
+    "browser_action": {
+        "default_icon": {
+            "16": "images/icon16.png",
+            "19": "images/icon19.png",
+            "48": "images/icon48.png",
+            "128": "images/icon128.png"
+        },
+        "default_title": "谷歌学术助手",
+        "default_popup": "popup.html"
+    },
+    
+    "background": {
+      "page": "bg.html",
+      "persistent": true
+    },
+   
+    "permissions": ["contextMenus", "management", "notifications","proxy","storage","tabs","unlimitedStorage","webRequest","webRequestBlocking", "http://*/*", "https://*/*"],
+	"web_accessible_resources": ["unpaywall.html"]
+}
